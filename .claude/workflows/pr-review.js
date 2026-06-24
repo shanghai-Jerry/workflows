@@ -1,6 +1,15 @@
 export const meta = {
   name: 'pr-review',
   description: 'Read PR review comments (inline + PR-level) and suggest fixes',
+  whenToUse: 'User wants to review or address PR comments/reviews. Trigger when they mention: fixing PR review comments, addressing code review feedback, responding to reviewer suggestions, handling inline review comments, fixing review findings on a PR.',
+  examples: [
+    '修复 pr 中的有关评论的意见',
+    '帮我处理这个 PR 的 review 意见',
+    '看看 PR #45 的评审意见，给出修复方案',
+    'address the review comments on the PR',
+    'fix the code review feedback',
+    'handle inline review suggestions',
+  ],
   phases: [
     { title: 'Gather', detail: 'Fetch PR comments from GitHub' },
     { title: 'Analyze', detail: 'Analyze each comment and suggest fixes' },

@@ -1,6 +1,15 @@
 export const meta = {
   name: 'analyze-issues',
   description: 'Scan open GitHub issues, find fixable ones, suggest fixes',
+  whenToUse: 'User wants to scan or triage GitHub issues. Trigger when they mention: checking open issues, finding fixable issues, analyzing GitHub issues, triaging issues, looking at issue backlog.',
+  examples: [
+    '看看仓库有哪些 open issues 可以修',
+    '帮我分析一下 GitHub issues',
+    '扫描一下 issues 找找能修的 bug',
+    'check open issues and find fixable ones',
+    'triage the GitHub issues',
+    'analyze issues in the repo',
+  ],
   phases: [
     { title: 'Gather', detail: 'Fetch open issues from GitHub' },
     { title: 'Analyze', detail: 'Deep analysis of each issue' },
