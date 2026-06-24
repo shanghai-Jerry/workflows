@@ -1,6 +1,15 @@
 export const meta = {
   name: 'analyze-module',
   description: 'Deep-dive into a Go module, learn its architecture, find bugs',
+  whenToUse: 'User wants a deep code analysis of a specific Go module or directory. Trigger when they mention: analyzing a module, finding bugs in code, code review of a package, deep dive into a directory, auditing code quality of a module.',
+  examples: [
+    '分析一下 agent 模块的代码质量',
+    '帮我找找 agent 目录下有没有 bug',
+    '深入分析这个 Go 包的架构',
+    'analyze the agent module for bugs',
+    'deep dive into the codebase and find issues',
+    'audit the code quality of ./pkg/handler',
+  ],
   phases: [
     { title: 'Gather', detail: 'Explore module structure and interfaces' },
     { title: 'Analyze', detail: 'Deep analysis of each file' },

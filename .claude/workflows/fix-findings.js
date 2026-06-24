@@ -1,6 +1,15 @@
 export const meta = {
   name: 'fix-findings',
   description: 'Apply fixes for findings from a previous analysis run',
+  whenToUse: 'User wants to fix issues that were previously identified by analyze-module or pr-review. Trigger when they mention: fixing the findings, applying fixes, auto-fix the bugs, patch the issues found, fix the problems from analysis.',
+  examples: [
+    '把刚才分析出来的问题修一下',
+    '修复分析报告里的那些 bug',
+    '自动修复发现的问题',
+    'fix the findings from the analysis',
+    'apply the suggested fixes',
+    'patch the bugs found in the report',
+  ],
   phases: [
     { title: 'Fix', detail: 'Apply confirmed fixes' },
   ],
